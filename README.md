@@ -120,7 +120,6 @@ python3 -m http.server 8080 --bind 192.168.154.11
 
 Now to retrieve the files, and back up the previous!
 ```sh
-```sh
 cp -p /var/ipaccess/nv_env.sh /var/ipaccess/nv_env.sh.bak-before-root-ssh
 mkdir -p /var/ipaccess/root_home/.ssh
 chmod 700 /var/ipaccess/root_home/.ssh
