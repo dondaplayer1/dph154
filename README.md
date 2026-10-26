@@ -102,7 +102,7 @@ cd ~/DPH153-AT
 sudo env OPENSSL_CONF="$PWD/acs/legacy.cnf" python3 acs/acs_tr069.py
 ```
  
-If your femto is on already, power cycle it. If it isn't on, power it on! You can watch the DHCP/DNS requests via `tail -f "$LAB/dnsmasq.log". It should get a lease, resolve all the domains, synchronize time, and send a CWMP inform. If it fails, check DHCP/DNS: `sudo tcpdump -ni "$IFACE" 'udp port 123 or tcp port 443'`
+If your femto is on already, power cycle it. If it isn't on, power it on! You can watch the DHCP/DNS requests via `tail -f "$LAB/dnsmasq.log"`. It should get a lease, resolve all the domains, synchronize time, and send a CWMP inform. If it fails, check DHCP/DNS: `sudo tcpdump -ni "$IFACE" 'udp port 123 or tcp port 443'`
 
 You should have been dropped into a root shell in terminal 2. Check: `id` You should see `uid=0(root)`. Congrats! Now, let's persist it.
 
